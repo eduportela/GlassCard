@@ -1,0 +1,242 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to right, #250d3a, #952fff);
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: url(/img/gp12.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#img-left-bottom {
+  position: absolute;
+  left: -60px;
+  bottom: -40px;
+  width: 284px;
+  height: 284px;
+  animation: spin 10s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotateZ(360deg);
+  }
+}
+
+#img-left-top {
+  width: 290.25px;
+  height: 267.16px;
+  position: absolute;
+  top: -90px;
+  left: -30px;
+  animation: rotate 10s linear infinite;
+}
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotateZ(-360deg);
+  }
+}
+
+#img-right {
+  width: 550px;
+  height: 610px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  animation: bounce 10s linear infinite;
+}
+@-webkit-keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
+}
+
+.info {
+  width: 100%;
+  max-width: 1117px;
+  z-index: 9;
+  display: flex;
+  justify-content: space-between;
+  height: 404px;
+}
+
+.title {
+  width: 480px;
+}
+
+.title h1 {
+  font-style: normal;
+  width: 431px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  text-transform: capitalize;
+  color: white;
+  font-family: Lato, sans-serif;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.info p {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: white;
+  width: 336px;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.info-submit {
+  width: 100%;
+  position: relative;
+}
+
+.info-submit input {
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(45px);
+}
+
+.info-submit input::placeholder {
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  padding-left: 30px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.info-submit button {
+  width: 120px;
+  height: 50px;
+  background-color: #4f3aa7;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  outline: none;
+  border: none;
+  color: white;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
+
+.info-submit button:hover {
+  background-color: white;
+  color: #55439e;
+  transition: 0.2s ease all;
+  cursor: pointer;
+}
+
+.info-card .card {
+  width: 480px;
+  height: 270px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  position: relative;
+  padding: 40px 50px;
+  box-sizing: border-box;
+}
+
+.info-card .card::before {
+  content: "";
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  box-sizing: border-box;
+  border-radius: 20px 0 0 20px;
+}
+
+.info-card .card::after {
+  content: "";
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-left: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  box-sizing: border-box;
+  border-radius: 0 20px 20px 0;
+}
+
+.card-title h2 {
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 46px;
+}
+
+.card-chip img {
+  width: 60px;
+  height: 43px;
+}
+
+.card-footer {
+  margin-top: 27px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-footer p {
+  margin: 0 0;
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.card-footer #name {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: Lato, sans-serif;
+  margin-top: 4px;
+  font-weight: normal;
+}
+
+.card-footer .footer-date {
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  font-family: Lato, sans-serif;
+  font-weight: normal;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Glassmorphism</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <img id="img-left-bottom" src="./img/rec.png" />
+      <img id="img-left-top" src="./img/img.png" />
+      <img id="img-right" src="./img/gp11.png" />
+      <div class="info">
+        <div class="title">
+          <h1>
+            Wordlwide Purchase Access From Your <br />
+            Glass Card
+          </h1>
+          <p>
+            Free upgrade option to our platinum services and get lifetime
+            validity.
+          </p>
+          <div class="info-submit">
+            <input type="text" placeholder="Your Email" />
+            <button type="submit">Apply</button>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="card">
+            <div class="card-title">
+              <h2>GlassCard</h2>
+            </div>
+
+            <div class="card-chip">
+              <img src="./img/chip.png" />
+            </div>
+
+            <div class="card-footer">
+              <div class="footer-info">
+                <p>6689 2547 2265 1258</p>
+                <p id="name">Eduardo Portela</p>
+              </div>
+              <div class="footer-date">12/05</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="./vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelector(".card"), {
+        max: 25,
+        speed: 400,
+      });
+    </script>
+  </body>
+</html>
